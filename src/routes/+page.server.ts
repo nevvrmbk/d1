@@ -5,13 +5,13 @@ export const load: any = async ({ cookies, fetch, getClientAddress, platform, re
     console.log(platform);
     console.log(request);
 
-    if (platform) {
+    if (platform.env) {
         return {
-            message: "Platform is avaliable."
+            message: "Platform env is avaliable."
         };
     }
 
     return {
-        message: "Platform is not available."
+        message: "Platform env is not available."
     };
 };
