@@ -5,7 +5,7 @@ export const load: any = async ({ cookies, fetch, getClientAddress, platform, re
 	console.log(platform);
 	console.log(request);
 
-	if (platform.env.bucket) {
+	if (platform.env) {
 		try {
 			await platform.env.bucket.put('one', 'Jessica Alba');
 			await platform.env.bucket.put('two', 'Jamie Alexander');
