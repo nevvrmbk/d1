@@ -11,7 +11,7 @@ declare namespace App {
 	// interface Error {}
 	interface Platform {
 		env?: {
-			Bucket: KVNamespace;
+			bucket: KVNamespace;
 		}
 	}
 }

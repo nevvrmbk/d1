@@ -5,13 +5,14 @@ export const load: any = async ({ cookies, fetch, getClientAddress, platform, re
 	console.log(platform);
 	console.log(request);
 
-	if (platform.env) {
+	if (platform.env.bucket) {
 		try {
-			await platform.env.Bucket.put('one', 'Jessica Alba');
-			await platform.env.Bucket.put('two', 'Jamie Alexander');
-			await platform.env.Bucket.put('three', 'Jennifer Lawrence');
-			await platform.env.Bucket.put('four', 'Hailee Steinfeld');
-			await platform.env.Bucket.put('five', 'Amanda Setfried');
+			await platform.env.bucket.put('one', 'Jessica Alba');
+			await platform.env.bucket.put('two', 'Jamie Alexander');
+			await platform.env.bucket.put('three', 'Jennifer Lawrence');
+			await platform.env.bucket.put('four', 'Hailee Steinfeld');
+			await platform.env.bucket.put('five', 'Amanda Setfried');
+			console.log(await platform.env.bucket.get('one'));
 		} catch (err) {
 			console.log(err);
 		}

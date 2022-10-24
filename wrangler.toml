@@ -1,6 +1,5 @@
 name = "d1"
 compatibility_date = "2022-10-23"
 kv_namespaces = [
-    { binding = "bucket", id = "5469964097b8451abbf20bc84ca571b6" }
+    { binding = "bucket", id = "5469964097b8451abbf20bc84ca571b6", preview_id = "404009c66546443e8db8ba2b0b7bf01c" },
 ]
-
